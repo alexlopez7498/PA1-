@@ -1,0 +1,10 @@
+/.idea/
+/cmake-build-debug/
+/CMakeFiles/
+/Testing/
+/CMakeCache.txt
+/PA1
+/PA1.cbp
+/Makefile
+/cmake_install.cmake
+/build/
