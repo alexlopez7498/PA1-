@@ -22,7 +22,7 @@ public:
 	int size();
 	bool isEmpty();
 	bool isFull();
-}
+};
 // Constructor to initialize queue
 queue::queue(int size)
 {
@@ -47,7 +47,7 @@ void queue::dequeue()
 		cout << "UnderFlow\nProgram Terminated\n";
 		return;
 	}
-	cout < "Removing " << arr[front] << '\n';
+	cout << "Removing " << arr[front] << '\n';
 	front = (front + 1) % capacity;
 	count--;
 }
@@ -55,7 +55,7 @@ void queue::dequeue()
 void queue::enqueue(int item)
 {
 	// check for queue overflow
-	if (isFul())
+	if (isFull())
 	{
 		cout << "OverFlow\nProgram Terminated\n";
 		return;
@@ -88,7 +88,7 @@ bool queue::isEmpty()
 // Utility function to check if the queue is full or not
 bool queue::isFull()
 {
-	return (size() - 1 = capacity);
+	return (size() - 1 == capacity);
 }
 // main function
 int main()
