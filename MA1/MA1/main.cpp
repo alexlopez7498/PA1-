@@ -71,7 +71,8 @@ int queue::peek()
 	if (isEmpty())
 	{
 		cout << "UnderFlow\nProgram Terminated\n";
-		return numeric_limits<int>::min();
+		return 0;
+		//return numeric_limits<int>::min();
 	}
 	return arr[rear];
 }
